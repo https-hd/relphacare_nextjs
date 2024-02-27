@@ -1,0 +1,29 @@
+<svg width="170" height="160" viewBox="0 0 170 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_i_402_405)">
+<rect y="-1.5" width="170" height="161" rx="20" fill="url(#paint0_linear_402_405)"/>
+<g clip-path="url(#clip0_402_405)">
+<path d="M84.7422 62.6523C90.7213 62.6523 95.5684 57.8053 95.5684 51.8262C95.5684 45.847 90.7213 41 84.7422 41C78.7631 41 73.916 45.847 73.916 51.8262C73.916 57.8053 78.7631 62.6523 84.7422 62.6523Z" fill="white"/>
+<path d="M116.676 99.3189C111.456 87.0633 92.9516 68.1518 92.5919 67.9183C90.7301 65.9089 88.0084 64.9226 85.2593 64.8821V64.8738H84.7411V64.8821C81.992 64.9238 79.2691 65.9101 77.4085 67.9183C77.0488 68.1518 58.5434 87.0633 53.3227 99.3189C52.047 102.316 53.2417 105.138 55.2416 106.802C54.7461 108.445 54.7342 110.281 55.2905 112.052C56.2469 115.104 58.7221 117 61.744 117C67.5257 117 102.44 117 108.254 117C111.276 117 113.75 115.103 114.706 112.052C115.264 110.281 115.252 108.445 114.755 106.802C116.759 105.138 117.953 102.316 116.676 99.3189ZM67.5234 97.388C69.7436 93.7599 72.2748 90.4426 75.0263 87.2503C75.0263 90.5426 75.1216 98.7793 75.2871 99.5273C74.7285 99.3832 69.5423 98.0765 67.5234 97.388ZM94.7144 99.5273C94.8788 98.7793 94.9741 90.5426 94.9741 87.2503C97.728 90.4426 100.259 93.7599 102.478 97.388C100.46 98.0765 95.2743 99.3832 94.7144 99.5273Z" fill="white"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_i_402_405" x="-2" y="-5.5" width="172" height="165" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-2" dy="-4"/>
+<feGaussianBlur stdDeviation="2.5"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.2 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_402_405"/>
+</filter>
+<linearGradient id="paint0_linear_402_405" x1="-2.02656e-06" y1="144.821" x2="162.703" y2="7.38211" gradientUnits="userSpaceOnUse">
+<stop offset="0.0980198" stop-color="#1D6D5A"/>
+<stop offset="0.489142" stop-color="#60A98B"/>
+<stop offset="1" stop-color="#CFEDB7"/>
+</linearGradient>
+<clipPath id="clip0_402_405">
+<rect width="76" height="76" fill="white" transform="translate(47 41)"/>
+</clipPath>
+</defs>
+</svg>
