@@ -1,17 +1,18 @@
 import Head from 'next/head';
+import React from 'react';
 
-const MainMenu = () => {
+const FragrancesPage = () => {
   return (
     <div className="bg-blue-100 min-h-screen flex flex-col justify-center items-center">
       <Head>
-        <title>Main Menu</title>
+        <title>Fragrances</title>
       </Head>
       {/* Top Left Logo */}
       <div className="absolute top-0 left-0 p-2">
         <img
           src="/logo.png"
           alt="Logo"
-          className="w-48 h-48"
+          className="w-[102px] h-[102px] border border-gray-700"
         />
       </div>
 
@@ -38,44 +39,40 @@ const MainMenu = () => {
         </button>
       </div>
 
-
       {/* Bottom Right Small Logo */}
       <div className="absolute bottom-0 right-0 p-5">
-        <div className="w-24 h-24 border border-gray-700"></div>
+        <div className="w-[102px] h-[102px] border border-gray-700"></div>
       </div>
 
       {/* Main Body */}
-      <div className="grid grid-cols-5 grid-rows-2 gap-10 mt-30">
-        {/* First Row */}
-        <MenuItem title="Books" imageSrc="../images/MainMenuImages/Books.svg" />
-        <MenuItem title="Exercise" imageSrc="../images/MainMenuImages/Exercises.svg" />
-        <MenuItem title="Fragrances" imageSrc="../images/MainMenuImages/Fragrances.svg" />
-        <MenuItem title="Puzzles" imageSrc="../images/MainMenuImages/Puzzles.svg" />
-        <MenuItem title="Mindfulness" imageSrc="../images/MainMenuImages/Mindfullness.svg" />
-
-        {/* Second Row */}
-        <MenuItem title="Videos" imageSrc="../images/MainMenuImages/Videos.svg" />
-        <MenuItem title="Music" imageSrc="../images/MainMenuImages/Music.svg" />
-        <MenuItem title="Calming tones" imageSrc="../images/MainMenuImages/Calming_tones.svg" />
-        <MenuItem title="Meditation" imageSrc="../images/MainMenuImages/Meditation.svg" />
-        <MenuItem title="Surprise me" imageSrc="../images/MainMenuImages/Surprise.svg" />
+      <div className="grid grid-cols-4 grid-rows-2 gap-10 mt-30">
+        {/* Fragrance Items */}
+        <FragranceItem title="Lavender" imageSrc="../images/MainMenuImages/Books.svg" />
+        <FragranceItem title="Rosemary" imageSrc="../images/MainMenuImages/Books.svg" />
+        <FragranceItem title="Rose" imageSrc="../images/MainMenuImages/Books.svg" />
+        <FragranceItem title="Chamomile" imageSrc="../images/MainMenuImages/Books.svg" />
+        <FragranceItem title="Geranium" imageSrc="../images/MainMenuImages/Books.svg" />
+        <FragranceItem title="Chamomile" imageSrc="../images/MainMenuImages/Books.svg" />
+        <FragranceItem title="Lavender" imageSrc="../images/MainMenuImages/Books.svg" />
+        <FragranceItem title="Rose" imageSrc="../images/MainMenuImages/Books.svg" />
       </div>
     </div>
   );
 };
 
-interface MenuItemProps {
+interface FragranceItemProps {
   title: string;
   imageSrc: string;
 }
 
-const MenuItem: React.FC<MenuItemProps> = ({ title, imageSrc }) => {
+const FragranceItem: React.FC<FragranceItemProps> = ({ title, imageSrc }) => {
   return (
-    <div className="w-48 h-56 flex flex-col items-center bg-white rounded-lg shadow-md">
+    <div className="w-52 h-52 flex flex-col items-center bg-white rounded-lg shadow-md">
       <img src={imageSrc} alt={title} className="w-32 h-32 mt-4" />
       <p className="font-poppins text-base font-normal mt-4">{title}</p>
     </div>
   );
 };
 
-export default MainMenu;
+
+export default FragrancesPage;
