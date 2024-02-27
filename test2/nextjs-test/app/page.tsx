@@ -17,24 +17,27 @@ const MainMenu = () => {
 
       {/* Top Right Back Button */}
       <div className="absolute top-5 right-5">
-        <button className="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg">
-          Back
-          <svg
-            className="w-4 h-4 inline-block ml-1 -mt-1"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0  0  24  24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M10  19l-7-7m0  0l7-7m-7  7h18"
-            ></path>
-          </svg>
+        <button className="px-4 py-2 text-gray-800 rounded-lg">
+          <span className="flex items-center">
+            <svg
+              className="w-4 h-4 inline-block ml-1 -mt-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0  0  24  24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M10  19l-7-7m0  0l7-7m-7  7h18"
+              ></path>
+            </svg>
+            <span className="ml-2">Back</span>
+          </span>
         </button>
       </div>
+
 
       {/* Bottom Right Small Logo */}
       <div className="absolute bottom-0 right-0 p-5">
