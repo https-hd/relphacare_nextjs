@@ -17,7 +17,7 @@ const MainMenu = () => {
 
       {/* Top Right Back Button */}
       <div className="absolute top-5 right-5">
-        <button className="px-4 py-2 text-gray-800 rounded-lg">
+        <button className="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg">
           Back
           <svg
             className="w-4 h-4 inline-block ml-1 -mt-1"
@@ -42,20 +42,20 @@ const MainMenu = () => {
       </div>
 
       {/* Main Body */}
-      <div className="grid grid-cols-5 grid-rows-2 gap-10 mt-32">
+      <div className="grid grid-cols-5 grid-rows-2 gap-10 mt-30">
         {/* First Row */}
-        <MenuItem title="Books" imageSrc="/images/MainMenuImages/Books.svg" />
-        <MenuItem title="Exercise" imageSrc="/images/MainMenuImages/Exercise.svg" />
-        <MenuItem title="Fragrances" imageSrc="/images/MainMenuImages/Fragrances.svg" />
-        <MenuItem title="Puzzles" imageSrc="/images/MainMenuImages/Puzzles.svg" />
-        <MenuItem title="Mindfulness" imageSrc="/images/MainMenuImages/Mindfulness.svg" />
+        <MenuItem title="Books" imageSrc="../images/MainMenuImages/Books.svg" />
+        <MenuItem title="Exercise" imageSrc="../images/MainMenuImages/Exercises.svg" />
+        <MenuItem title="Fragrances" imageSrc="../images/MainMenuImages/Fragrances.svg" />
+        <MenuItem title="Puzzles" imageSrc="../images/MainMenuImages/Puzzles.svg" />
+        <MenuItem title="Mindfulness" imageSrc="../images/MainMenuImages/Mindfullness.svg" />
 
         {/* Second Row */}
-        <MenuItem title="Videos" imageSrc="/images/MainMenuImages/Videos.svg" />
-        <MenuItem title="Music" imageSrc="/images/MainMenuImages/Music.svg" />
-        <MenuItem title="Calming tones" imageSrc="/images/MainMenuImages/Calming_tones.svg" />
-        <MenuItem title="Meditation" imageSrc="/images/MainMenuImages/Meditation.svg" />
-        <MenuItem title="Surprise me" imageSrc="/images/MainMenuImages/Surprise.svg" />
+        <MenuItem title="Videos" imageSrc="../images/MainMenuImages/Videos.svg" />
+        <MenuItem title="Music" imageSrc="../images/MainMenuImages/Music.svg" />
+        <MenuItem title="Calming tones" imageSrc="../images/MainMenuImages/Calming_tones.svg" />
+        <MenuItem title="Meditation" imageSrc="../images/MainMenuImages/Meditation.svg" />
+        <MenuItem title="Surprise me" imageSrc="../images/MainMenuImages/Surprise.svg" />
       </div>
     </div>
   );
