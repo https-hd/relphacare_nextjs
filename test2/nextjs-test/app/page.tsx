@@ -47,14 +47,14 @@ const FragrancesPage = () => {
       {/* Main Body */}
       <div className="grid grid-cols-4 grid-rows-2 gap-10 mt-30">
         {/* Fragrance Items */}
-        <FragranceItem title="Lavender" imageSrc="../images/MainMenuImages/Books.svg" />
-        <FragranceItem title="Rosemary" imageSrc="../images/MainMenuImages/Books.svg" />
-        <FragranceItem title="Rose" imageSrc="../images/MainMenuImages/Books.svg" />
-        <FragranceItem title="Chamomile" imageSrc="../images/MainMenuImages/Books.svg" />
-        <FragranceItem title="Geranium" imageSrc="../images/MainMenuImages/Books.svg" />
-        <FragranceItem title="Chamomile" imageSrc="../images/MainMenuImages/Books.svg" />
-        <FragranceItem title="Lavender" imageSrc="../images/MainMenuImages/Books.svg" />
-        <FragranceItem title="Rose" imageSrc="../images/MainMenuImages/Books.svg" />
+        <FragranceItem title="Lavender" imageSrc="../images/MainMenuImages/Fragrances.svg" />
+        <FragranceItem title="Rosemary" imageSrc="../images/MainMenuImages/Fragrances.svg" />
+        <FragranceItem title="Rose" imageSrc="../images/MainMenuImages/Fragrances.svg" />
+        <FragranceItem title="Chamomile" imageSrc="../images/MainMenuImages/Fragrances.svg" />
+        <FragranceItem title="Geranium" imageSrc="../images/MainMenuImages/Fragrances.svg" />
+        <FragranceItem title="Chamomile" imageSrc="../images/MainMenuImages/Fragrances.svg" />
+        <FragranceItem title="Lavender" imageSrc="../images/MainMenuImages/Fragrances.svg" />
+        <FragranceItem title="Rose" imageSrc="../images/MainMenuImages/Fragrances.svg" />
       </div>
     </div>
   );
