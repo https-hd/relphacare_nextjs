@@ -1,16 +1,15 @@
 import Head from 'next/head';
 import React from 'react';
 
-const PodcastsPage = () => {
+const ExcercisePage = () => {
   return (
     <div className="bg-gradient-to-t to-yellow-100 from-purple-400 flex flex-col text-black min-h-screen justify-center items-center relative">
       <Head>
-        <title>Podcasts</title>
+        <title>Excercises</title>
       </Head>
 
       {/* Heading */}
-      <h1 className="[rgba(58, 36, 113, 1)] font-poppins text-[50px] font-semibold text-center mb-40 px-8 absolute top-3 p-5">Podcasts</h1>
-
+      <h1 className="[rgba(58, 36, 113, 1)] font-poppins text-[50px] font-semibold text-center mb-40 px-8 absolute top-3 p-5">Exercises</h1>
 
       {/* Top Left Logo */}
       <div className="absolute top-0 right-0 p-5">
@@ -43,35 +42,14 @@ const PodcastsPage = () => {
         </button>
       </div>
 
-      {/* Main Body */}
-      <div className="grid grid-cols-3 gap-10 mt-30">
-        {/* Calming Video Items */}
-        <PodcastsItem title="Coming Soon..." imageSrc="../images/MainMenuImages/Calming_tones.svg" />
-        <PodcastsItem title="Samoran Adventures" imageSrc="../images/MainMenuImages/Calming_tones.svg" />
-        <PodcastsItem title="Coming Soon..." imageSrc="../images/MainMenuImages/Calming_tones.svg" />
+      {/* Placeholder Box for Video */}
+      <div
+        className="w-[848px] h-[400px] bg-gray-200 rounded-md absolute top-[200px] flex justify-center items-center">
+        {/* You can add your video component here */}
+        {/* For now, it's just an empty box */}
       </div>
     </div>
   );
 };
 
-interface PodcastsItemProps {
-  title: string;
-  imageSrc: string;
-}
-
-const PodcastsItem: React.FC<PodcastsItemProps> = ({ title, imageSrc }) => {
-  return (
-    <div className="flex flex-col items-center">
-      <div className="w-220 h-79 bg-white rounded-lg shadow-md flex justify-center items-center p-5">
-        <img src={imageSrc} alt={title} className="w-32 h-32" />
-      </div>
-      <p className="font-poppins text-30 font-semibold leading-42 text-center mt-4 text-black">{title}</p>
-    </div>
-  );
-};
-
-export default PodcastsPage;
-
-
-
-
+export default ExcercisePage;
