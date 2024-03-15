@@ -1,15 +1,15 @@
 import Head from 'next/head';
 import React from 'react';
 
-const ExcercisePage = () => {
+const PodcastsPage = () => {
     return (
         <div className="bg-gradient-to-t to-yellow-100 from-purple-400 flex flex-col text-black min-h-screen justify-center items-center relative">
             <Head>
-                <title>Excercises</title>
+                <title>Podcasts</title>
             </Head>
 
             {/* Heading */}
-            <h1 className="[rgba(58, 36, 113, 1)] font-poppins text-[50px] font-semibold text-center mb-40 px-8 absolute top-3 p-5">Exercises</h1>
+            <h1 className="[rgba(58, 36, 113, 1)] font-poppins text-[50px] font-semibold text-center mb-40 px-8 absolute top-3 p-5">Podcasts</h1>
 
 
             {/* Top Left Logo */}
@@ -43,25 +43,23 @@ const ExcercisePage = () => {
                 </button>
             </div>
 
-
             {/* Main Body */}
-            <div className="grid grid-cols-4 gap-10 mt-30">
-                {/* Excercise Items */}
-                <ExcerciseItem title="Zen Calm" imageSrc="../images/MainMenuImages/Exercises.svg" />
-                <ExcerciseItem title="Mindfulness Journey" imageSrc="../images/MainMenuImages/Exercises.svg" />
-                <ExcerciseItem title="Serenity Now" imageSrc="../images/MainMenuImages/Exercises.svg" />
-                <ExcerciseItem title="Tranquil Waters" imageSrc="../images/MainMenuImages/Exercises.svg" />
+            <div className="grid grid-cols-3 gap-10 mt-30">
+                {/* Calming Video Items */}
+                <PodcastsItem title="Coming Soon..." imageSrc="../images/MainMenuImages/Calming_tones.svg" />
+                <PodcastsItem title="Samoran Adventures" imageSrc="../images/MainMenuImages/Calming_tones.svg" />
+                <PodcastsItem title="Coming Soon..." imageSrc="../images/MainMenuImages/Calming_tones.svg" />
             </div>
         </div>
     );
 };
 
-interface ExcerciseItemProps {
+interface PodcastsItemProps {
     title: string;
     imageSrc: string;
 }
 
-const ExcerciseItem: React.FC<ExcerciseItemProps> = ({ title, imageSrc }) => {
+const PodcastsItem: React.FC<PodcastsItemProps> = ({ title, imageSrc }) => {
     return (
         <div className="flex flex-col items-center">
             <div className="w-220 h-79 bg-white rounded-lg shadow-md flex justify-center items-center p-5">
@@ -72,7 +70,7 @@ const ExcerciseItem: React.FC<ExcerciseItemProps> = ({ title, imageSrc }) => {
     );
 };
 
-export default ExcercisePage;
+export default PodcastsPage;
 
 
 
