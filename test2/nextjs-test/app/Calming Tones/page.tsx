@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
+import Link from 'next/link'; // Import Link component
 
 const CalmingTonesPage = () => {
     return (
@@ -23,7 +24,7 @@ const CalmingTonesPage = () => {
 
             {/* Top Right Back Button */}
             <div className="absolute top-10 left-5">
-                <button className="px-4 py-2 text-gray-800 rounded-lg">
+                <Link href="/MainMenu">
                     <span className="flex items-center">
                         <svg
                             className="w-10 h-10 inline-block ml-1 -mt-1"
@@ -40,7 +41,7 @@ const CalmingTonesPage = () => {
                             ></path>
                         </svg>
                     </span>
-                </button>
+                </Link>
             </div>
 
             {/* Main Body */}

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
+import Link from 'next/link'; // Import Link component
 
 const ASMRPage = () => {
     return (
@@ -10,7 +11,6 @@ const ASMRPage = () => {
 
             {/* Heading */}
             <h1 className="[rgba(58, 36, 113, 1)] font-poppins text-[50px] font-semibold text-center mb-40 px-8 absolute top-3 p-5">ASMR</h1>
-
 
             {/* Top Left Logo */}
             <div className="absolute top-0 right-0 p-5">
@@ -23,7 +23,7 @@ const ASMRPage = () => {
 
             {/* Top Right Back Button */}
             <div className="absolute top-10 left-5">
-                <button className="px-4 py-2 text-gray-800 rounded-lg">
+                <Link href="/MainMenu">
                     <span className="flex items-center">
                         <svg
                             className="w-10 h-10 inline-block ml-1 -mt-1"
@@ -40,9 +40,8 @@ const ASMRPage = () => {
                             ></path>
                         </svg>
                     </span>
-                </button>
+                </Link>
             </div>
-
 
             {/* Main Body */}
             <div className="grid grid-cols-4 gap-10 mt-30">
