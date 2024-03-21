@@ -2,15 +2,17 @@ import Head from 'next/head';
 import React from 'react';
 import Link from 'next/link'; // Import Link component
 
-const ASMRPage = () => {
+
+const CalmingTonesPage = () => {
   return (
     <div className="bg-gradient-to-t to-yellow-100 from-purple-400 flex flex-col text-black min-h-screen justify-center items-center relative">
       <Head>
-        <title>ASMR</title>
+        <title>Calming Tones</title>
       </Head>
 
       {/* Heading */}
-      <h1 className="[rgba(58, 36, 113, 1)] font-poppins text-[50px] font-semibold text-center mb-40 px-8 absolute top-3 p-5">ASMR</h1>
+      <h1 className="[rgba(58, 36, 113, 1)] font-poppins text-[50px] font-semibold text-center mb-40 px-8 absolute top-3 p-5">Calming Tones</h1>
+
 
       {/* Top Left Logo */}
       <div className="absolute top-0 right-0 p-5">
@@ -44,23 +46,22 @@ const ASMRPage = () => {
       </div>
 
       {/* Main Body */}
-      <div className="grid grid-cols-4 gap-10 mt-30">
-        {/* ASMR Items */}
-        <ASMRItem title="Zen Calm" imageSrc="../images/MainMenuImages/Exercises.svg" />
-        <ASMRItem title="Mindfulness Journey" imageSrc="../images/MainMenuImages/Exercises.svg" />
-        <ASMRItem title="Serenity Now" imageSrc="../images/MainMenuImages/Exercises.svg" />
-        <ASMRItem title="Tranquil Waters" imageSrc="../images/MainMenuImages/Exercises.svg" />
+      <div className="grid grid-cols-3 gap-10 mt-30">
+        {/* Calming Video Items */}
+        <CalmingTonesItem title="Coming Soon..." imageSrc="../images/MainMenuImages/Calming_tones.svg" />
+        <CalmingTonesItem title="Samoran Adventures" imageSrc="../images/MainMenuImages/Calming_tones.svg" />
+        <CalmingTonesItem title="Coming Soon..." imageSrc="../images/MainMenuImages/Calming_tones.svg" />
       </div>
     </div>
   );
 };
 
-interface ASMRItemProps {
+interface CalmingTonesItemProps {
   title: string;
   imageSrc: string;
 }
 
-const ASMRItem: React.FC<ASMRItemProps> = ({ title, imageSrc }) => {
+const CalmingTonesItem: React.FC<CalmingTonesItemProps> = ({ title, imageSrc }) => {
   return (
     <div className="flex flex-col items-center">
       <div className="w-220 h-79 bg-white rounded-lg shadow-md flex justify-center items-center p-5">
@@ -71,7 +72,7 @@ const ASMRItem: React.FC<ASMRItemProps> = ({ title, imageSrc }) => {
   );
 };
 
-export default ASMRPage;
+export default CalmingTonesPage;
 
 
 
