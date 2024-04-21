@@ -1,79 +1,74 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import React from 'react';
-import Link from 'next/link'; // Import Link component
 
-
-const CalmingTonesPage = () => {
+const LoginPage = () => {
   return (
-    <div className="bg-gradient-to-t to-yellow-100 from-purple-400 flex flex-col text-black min-h-screen justify-center items-center relative">
+    <>
       <Head>
-        <title>Calming Tones</title>
+        <title>RelpaCare Login</title>
       </Head>
+      <div className="flex min-h-screen bg-[#12143b]">
+        {/* Left - Form Section */}
+        <div className="w-1/2 flex flex-col justify-center px-20 space-y-10">
+          {/* Logo */}
+          <div className="self-start">
+            <Image src="/images/login_new/relphacare_logo.png" alt="RelpaCare Logo"width={500} height={400} />
+          </div>
 
-      {/* Heading */}
-      <h1 className="[rgba(58, 36, 113, 1)] font-poppins text-[50px] font-semibold text-center mb-40 px-8 absolute top-3 p-5">Calming Tones</h1>
+          {/* Header and Register */}
+          <div className="flex items-center justify-between w-full">
+            <h2 className="text-xl font-light text-white">Welcome!</h2>
+            <a href="#" className="text-white hover:text-[#a050af] text-xl font-light">Register</a>
+          </div>
 
+          {/* Form */}
+          <form className="mt-4 w-10px">
+            <div>
+              <label htmlFor="email" className="text-sm text-[#b060bf]">Email</label>
+              <input
+                id="email"
+                type="email"
+                className="pt-3 w-full px-4 py-1 rounded-md border border-gray-300 bg-white focus:border-[#b060bf] focus:outline-none focus:ring-1 focus:ring-[#b060bf]"
+              />
+            </div>
+            <div>
+              <label htmlFor="password" className="text-sm text-[#b060bf]">Password</label>
+              <input
+                id="password"
+                type="password"
+                className="pt-3 w-full px-4 py-1 rounded-md border border-gray-300 bg-white focus:border-[#b060bf] focus:outline-none focus:ring-1 focus:ring-[#b060bf]"
+              />
+            </div>
+            <div className="flex items-center justify-between">
+              <label className="flex items-center space-x-2">
+                <input type="checkbox" className="form-checkbox h-4 w-4 text-[#b060bf]" />
+                <span className="text-[#77b255]">Remember me</span>
+              </label>
+              <button
+                type="submit"
+                className="px-6 py-1 rounded-md bg-[#b060bf] text-white hover:bg-[#a050af] focus:outline-none focus:ring-2 focus:ring-[#b060bf] focus:ring-opacity-50"
+              >
+                Login
+              </button>
+            </div>
+          </form>
+        </div>
 
-      {/* Top Left Logo */}
-      <div className="absolute top-0 right-0 p-5">
-        <img
-          src="/logo.png"
-          alt="Logo"
-          className="w-[102px] h-[102px] border border-gray-700"
-        />
+        {/* Right - Image Section */}
+        <div className="w-1/2 relative">
+          {/* Background Image */}
+          <Image
+            src="/images/login_new/login_image.jpg"
+            alt="Background"
+            layout="fill"
+            objectFit="cover"
+            quality={100}
+          />
+        </div>
       </div>
-
-      {/* Top Right Back Button */}
-      <div className="absolute top-10 left-5">
-        <Link href="/MainMenu">
-          <span className="flex items-center">
-            <svg
-              className="w-10 h-10 inline-block ml-1 -mt-1"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0  0  24  24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M10  19l-7-7m0  0l7-7m-7  7h"
-              ></path>
-            </svg>
-          </span>
-        </Link>
-      </div>
-
-      {/* Main Body */}
-      <div className="grid grid-cols-3 gap-10 mt-30">
-        {/* Calming Video Items */}
-        <CalmingTonesItem title="Coming Soon..." imageSrc="../images/MainMenuImages/Calming_tones.svg" />
-        <CalmingTonesItem title="Samoran Adventures" imageSrc="../images/MainMenuImages/Calming_tones.svg" />
-        <CalmingTonesItem title="Coming Soon..." imageSrc="../images/MainMenuImages/Calming_tones.svg" />
-      </div>
-    </div>
+    </>
   );
 };
 
-interface CalmingTonesItemProps {
-  title: string;
-  imageSrc: string;
-}
-
-const CalmingTonesItem: React.FC<CalmingTonesItemProps> = ({ title, imageSrc }) => {
-  return (
-    <div className="flex flex-col items-center">
-      <div className="w-220 h-79 bg-white rounded-lg shadow-md flex justify-center items-center p-5">
-        <img src={imageSrc} alt={title} className="w-32 h-32" />
-      </div>
-      <p className="font-poppins text-30 font-semibold leading-42 text-center mt-4 text-black">{title}</p>
-    </div>
-  );
-};
-
-export default CalmingTonesPage;
-
-
-
-
+export default LoginPage;
