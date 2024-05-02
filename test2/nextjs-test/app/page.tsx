@@ -2,73 +2,54 @@ import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react';
 
-const LoginPage = () => {
+const DashboardPage = () => {
   return (
     <>
       <Head>
-        <title>RelpaCare Login</title>
+        <title>RelpaCare Dashboard</title>
       </Head>
-      <div className="flex min-h-screen bg-[#12143b]">
-        {/* Left - Form Section */}
-        <div className="w-1/2 flex flex-col justify-center px-20 space-y-10">
-          {/* Logo */}
-          <div className="self-start">
-            <Image src="/images/login_new/relphacare_logo.png" alt="RelpaCare Logo"width={500} height={400} />
+      <div className="min-h-screen flex flex-col items-center justify-center bg-[#12143b]">
+        {/* Container for all blocks */}
+        <div className="flex flex-col items-center space-y-20 rounded-lg">
+          {/* Row 1 - 3 items */}
+          <div className="flex space-x-12">
+            {/* EMP Block */}
+            <div className="flex flex-col items-center bg-gradient-to-r from-[#b3f5d5] to-[#b1daf6] rounded-lg p-6">
+              <Image src="/images/EMP.svg" alt="EMP Icon" width={150} height={100} />
+              <p className="text-white mt-2">EMP</p>
+            </div>
+
+            {/* PIN Block */}
+            <div className="flex flex-col items-center bg-gradient-to-r from-[#ffd2e0] to-[#f8d4ff] rounded-lg p-6">
+              <Image src="/images/Pin.svg" alt="PIN Icon" width={150} height={100} />
+              <p className="text-white mt-2">PIN</p>
+            </div>
+
+            {/* EPP Block */}
+            <div className="flex flex-col items-center bg-gradient-to-r from-[#ffb58c] to-[#dddfd4] rounded-lg p-6">
+              <Image src="/images/EPP.svg" alt="EPP Icon" width={150} height={100} />
+              <p className="text-white mt-2">EPP</p>
+            </div>
           </div>
 
-          {/* Header and Register */}
-          <div className="flex items-center justify-between w-full">
-            <h2 className="text-xl font-light text-white">Welcome!</h2>
-            <a href="#" className="text-white hover:text-[#a050af] text-xl font-light">Register</a>
+          {/* Row 2 - 2 items */}
+          <div className="flex space-x-12">
+            {/* RPM Block */}
+            <div className="flex flex-col items-center bg-gradient-to-r from-[#ddb7ff] to-[#d9b2ff] rounded-lg p-6">
+              <Image src="/images/RPM.svg" alt="RPM Icon" width={150} height={100} />
+              <p className="text-white mt-2">RPM</p>
+            </div>
+
+            {/* RTLS Block */}
+            <div className="flex flex-col items-center bg-gradient-to-r from-[#ffe089] to-[#f1d785] rounded-lg p-6">
+              <Image src="/images/RTLS.svg" alt="RTLS Icon" width={150} height={100} />
+              <p className="text-white mt-2">RTLS</p>
+            </div>
           </div>
-
-          {/* Form */}
-          <form className="mt-4 w-10px">
-            <div>
-              <label htmlFor="email" className="text-sm text-[#b060bf]">Email</label>
-              <input
-                id="email"
-                type="email"
-                className="pt-3 w-full px-4 py-1 rounded-md border border-gray-300 bg-white focus:border-[#b060bf] focus:outline-none focus:ring-1 focus:ring-[#b060bf]"
-              />
-            </div>
-            <div>
-              <label htmlFor="password" className="text-sm text-[#b060bf]">Password</label>
-              <input
-                id="password"
-                type="password"
-                className="pt-3 w-full px-4 py-1 rounded-md border border-gray-300 bg-white focus:border-[#b060bf] focus:outline-none focus:ring-1 focus:ring-[#b060bf]"
-              />
-            </div>
-            <div className="flex items-center justify-between">
-              <label className="flex items-center space-x-2">
-                <input type="checkbox" className="form-checkbox h-4 w-4 text-[#b060bf]" />
-                <span className="text-[#77b255]">Remember me</span>
-              </label>
-              <button
-                type="submit"
-                className="px-6 py-1 rounded-md bg-[#b060bf] text-white hover:bg-[#a050af] focus:outline-none focus:ring-2 focus:ring-[#b060bf] focus:ring-opacity-50"
-              >
-                Login
-              </button>
-            </div>
-          </form>
-        </div>
-
-        {/* Right - Image Section */}
-        <div className="w-1/2 relative">
-          {/* Background Image */}
-          <Image
-            src="/images/login_new/login_image.jpg"
-            alt="Background"
-            layout="fill"
-            objectFit="cover"
-            quality={100}
-          />
         </div>
       </div>
     </>
   );
 };
 
-export default LoginPage;
+export default DashboardPage;
